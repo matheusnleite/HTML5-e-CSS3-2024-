@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradiente em CSS</title>
+    <style>
+      /*Configuração global para o degrade ocupar a tela inteira*/
+      * {
+        height: 100%;
+      }
+      /*Fazendo um degrade*/
+      body {
+        /* essa maneira usa to bottom
+
+        background-image: linear-gradient(
+          to bottom,
+          #5063d1,
+          #933bb9,
+          #bb3491,
+          #d52f78,
+          #fa792d,
+          #fdce6f
+        ); */
+
+        /*Essa maneira usa angulos*/
+
+        background-image: linear-gradient(
+          -45deg,
+          #5063d1,
+          #933bb9,
+          #bb3491,
+          #d52f78,
+          #fa792d,
+          #fdce6f
+        );
+
+        /*Existem outros tipos de degrade como o radiant*/
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Testando grandientes</h1>
+  </body>
+</html>
